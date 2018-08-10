@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper{
+    padding: 65px;
+    position: relative;
+    border-bottom: 0.1px solid rgb(209, 206, 206); 
+}
+
+.responsive-img{
+    position: absolute;
+}
+
+.logo{
+    position: absolute;
+    top: 46px;
+    left: 170px;
+}
+
+.left{
+    position: absolute;
+    top: 40px;
+    left: 350px;
+    transition: 1s;
+    font-size: 10px;
+}
+
+.left :hover{
+    color: red;
+}
+
+.left li a{
+    font-size: 12px;
+}
+
+.waves1{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 547px;
+    font-size: 12px;
+}
+.waves2{
+    width: 190px;
+    height: 57px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    left: 647px;
+    font-size: 12px;
+    transition: 1s;
+}
+.waves2 :hover{
+    border: 2px  #FF0000 solid;
+    color: red;
+}
+.titulo{
+    font-size: 55px;
+    position: relative;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+}
+.titulo2{
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+
+}
+
