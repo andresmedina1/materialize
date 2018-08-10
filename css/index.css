@@ -60,7 +60,7 @@ body{
     font-size: 12px;
     transition: 1s;
 }
-.waves2 :hover{
+.waves2:hover{
     border: 2px  #FF0000 solid;
     color: red;
 }
@@ -77,6 +77,40 @@ body{
     top: 80px;
     left: 0px;
     right: 0px;
+}
 
+.container{
+    width: 380px;
+    height: 66px;
+    position: relative;
+    top: 120px;
+    text-align: center;
+    display: inline-block;
+}
+.container a:first-child{
+    width: 190px;
+    height: 57px;
+    border-radius: 50px;
+    background-color: rgb(247, 66, 96);
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    transition: 1s;
+    
+}
+.container a:nth-child(2){
+    width: 190px;
+    height: 57px;
+    border-radius: 50px;
+    border: 2px solid rgb(247, 66, 96);
+    position: absolute;
+    text-align: center;
+    left: 740px;
+    font-size: 12px;
+    transition: 1s;
+}
+.container a:nth-child(2):hover{
+    background-color:rgb(247, 66, 96);
+    color:white; 
 }
 
