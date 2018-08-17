@@ -21,7 +21,6 @@ body{
     color: rgb(255, 82, 120);
     background: transparent;
 }
-
 .barra .bars{
     margin: 0;
 }
@@ -30,7 +29,6 @@ body{
     right: 0px;
     margin-top: -60px;
 }
-
 .logo{
     position: relative;
     margin-left: -110px;
@@ -40,10 +38,9 @@ nav ul.left{
     margin-top: -60px;
     margin-left: 62px;
 }
-
 .raya{
     width: 90%;
-    position: absolute;
+    position: fixed;
     left: 75px;
 }
 .background{
@@ -56,22 +53,18 @@ nav ul.left{
     margin: 25px;
     margin-left: 640px;
 }
-
 .boton{
     padding: 8px 35px 8px 35px;
     border-radius: 100px;
     font-size: 13px;
     border: 1.5px white solid;
 }
-
 .login{
       margin: 30px;
 }
-
 .boton{
     transition: .4s;
 }
-
 .boton:hover{
     color: #FF5274;
     border: 1.5px #FF5274 solid;
@@ -79,29 +72,30 @@ nav ul.left{
 }
 .banner1{
     position: absolute;
-    margin-top: 140px;
-    margin-left: 180px;
+    margin-top: 252px;
+    margin-left: 324px;
     margin-right: 0px;
     width: 933px;
     height: 175px;
+    color: white;
 }
 .banner1 .titulo{
-color: white;
-font-size: 60px;
-position: absolute;
+  
+    font-size: 60px;
+    position: absolute;
 }
 .banner1 .titulo2{
     font-size: 20px;
     position: absolute;
-    top: 110px;
+    top: 95px;
     left: -112px;
 }
 .buttons{
     position: absolute;
-    margin-top: 400px;
-    margin-left: 380px;
+    margin-top: 541px;
+    margin-left: 471px;
     margin-right: 0px;
-    width: 339px;
+    width: 430px;
     height: 100px;
 }
 .buttons .download{
@@ -110,6 +104,8 @@ position: absolute;
     font-size: 13px;
     background-color:#FF5274;
     transition: 1s;
+    margin: 26px;
+    color: white;
 }
 .buttons .download:hover{
     background-color:#C93656;
@@ -127,30 +123,49 @@ position: absolute;
 }
 .more{
     position: absolute;
-    top: 650px;
-    left: 620px;
+    top: 695px;
+    left: 682px;
     right: 0px;
+    color: white;
 }
 .more .material-icons{
     font-size: 30px;
 }
-.col .large{
-    color: #FF5274;
-    font-size: 40px;
-    margin: 570px 0px 20px 20px;
-    display: inline-block
- } 
- img .responsive-img{
-     width: 3%;
- }
-
- .tit{
-   margin:-62px 0px 0px 92px;
-
-   
- }
- .par1{
-   margin: 7px 0px 20px 92px;
-
-   color: rgb(181, 187, 192);
- }
+.row .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    padding: 42px;
+}
+.col .responsive-img{
+   color: #FF5274;
+   width:10%;
+   margin:109px 0px 0px 40px;
+} 
+.tit{
+  margin:-50px 0px 0px 109px;
+}
+.par1{
+  margin: 24px 0px 20px 92px;
+  color: rgb(181, 187, 192);
+}
+.tablet{
+    width: auto;
+    height: 400px;
+    position: relative;
+    top: 150px;
+    left: -122px;
+}
+.iphone{
+    width: auto;
+    height: 400px;
+    position: relative;
+    left: 415px;
+    top: 0px;;
+}
+.fondo{
+    background-color: silver;
+    position: relative;
+    top: 66px;
+}
