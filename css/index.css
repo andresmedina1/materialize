@@ -1,100 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 body {
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif;  
 }
 nav{
-    background-color: transparent;
-    
-}
-.transparent {
-    background-color: rgba(0,0,0,0) !important;
     box-shadow: 0 0 transparent;
+    position: fixed;
 }
 nav .row{
     margin: 0;
-    box-shadow: 0 0 transparent;
 }
 nav .container{
- width: 90%;
- border-bottom: 1px solid rgba(255, 255, 255, 0.2);
- padding: 28.5px 0;
- position: fixed;
- margin-left: 70px;
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 28.5px 0;
 }
-nav .login{
+nav .boton1{
     margin-right: 40px;
 }
-nav .login>li:nth-child(2)>a{
+nav .boton1>li:nth-child(2)>a{
     background-color: transparent;
     box-shadow: 0 0 transparent;
     padding: 0 40px;
     border-radius: 100px;
     border: 1.5px white solid;
 }
-nav .login>li:nth-child(2)>a:hover{
+nav .boton1>li:nth-child(2)>a:hover{
     border: solid 1px #FF5274;
 }
-nav ul li a, .login {
+nav ul li a, .boton1 {
     transition: .4s;
     font-size: 13px;
 }
-nav ul li a:hover, .login:hover {
+nav ul li a:hover, .boton1:hover {
     color: #FF5274;
     background: transparent;
 }
 section .row{
-    padding: 155px 22px;
+    padding: 120px 0;
 }
-section .row .col .intro-content{
-    width: 63%;
-    margin: auto;
-}
-section .row .col .intro-icon{
+section .row .col .primero-icon{
     margin-right: 20px;
 }
-.intro-icon, .intro-content{
+.primero-icon, .primero-content{
     display: inline-block;
 }
-@media only screen and (max-width: 991px) {
-  section .row .col .intro-content {
-    width: 75%;
-}  
-.intro{
-    padding-top: 100%;
-}
-}
-@media only screen and (max-width: 1200px){
-    .intro{
-        padding-top: 100%;
-    }
-}
-
-.intro{
+.primero{
     width: 100%;
     text-align: center;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 220px 10px 15px 20px;
+    padding-top: 15%;
 }
-.intro h1{
+.primero h1{
     font-size: 60px;
     color: white;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: auto;  
     width: fit-content;
 }
-.intro p{
+.primero p{
     font-size: 20px;
     color: white;
-    margin-right: 27px;
 }
-.intro i{
-    font-size: 37px;
-    color: white;
-    margin: 165px 88px 0px 30px;
-}
-.fondo{
+.background{
+    transition: .4s;
     position: relative;
     min-height: 750px;
     background: url(../img/hero.jpg) center center;
@@ -105,172 +73,270 @@ section .row .col .intro-icon{
     border-radius: 100px;
     font-size: 13px;
     border: 1.5px white solid;
-  }
-  .btn{
     transition: .4s;
-  }
-  .btn:hover{
+}
+.btn:hover{
     color: #FF5274;
     border: 1.5px #FF5274 solid;
     background: transparent;
-  }
-
-.intro article{
-    margin-right: 20px;
-    margin: auto;
 }
-.intro  article a{
+.primero article{
+    margin-right: 188px;
+    margin-top: 113px;
+}
+.primero  article a{
     font-size: 13px;
     color: white;
-    padding: 15px 40px;
+    padding: 17px 43px;
     border-radius: 100px;
     background-color: #FF5274;
-    position: relative;
-    top: 75px;
-    right: 127px;
 }
-.intro  article a:hover{
+.primero  article a:hover{
     background-color:rgba(255, 82, 117, 0.788);
     color: white;
 }
-.intro  section{
-    margin: auto;
-    margin-right: 20px;
+.primero  section{
+    margin-top: -21px;
+    margin-left: 192px;
 }
-.intro  section a{
+.primero  section a{
     font-size: 13px;
     color: #FF5274;
     padding: 15px 40px;
     border-radius: 100px;
-    border: 2px solid #FF5274;
-    position: relative;
-    top: 53px;
-    left: 87px;
+    border: 2px solid #FF5274; 
 }
-.intro  section a:hover{
+.primero  section a:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
 } 
-
-
-.intro-content h5{
-    color: #3d4351;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 15px;
-}
-.intro-content p{
-    font-size: 14px;
-    color: rgba(28,54,83,.6);
-    padding-bottom: 20px;
-}
-.intro-icon{
-    display: inline-block;
-}
-.intro-icon img{
-    width: 50%;
-    margin: 0px -34px 75px 40px;
-}
-.intro-dos{
+.material-icons{
+    color: #fff;
+    font-size: 30px;
     position: absolute;
-    background: #F3F4F8;
-    margin-top: -53px;
-    width: 100%;
-    left: 0;
-    right: 61%;
+    bottom: 30px;
+    left: 49%;
+    animation: efecto 3s alternate infinite;
 }
-.intro-dos .imagenes{
-    position: relative;
-    margin-top: 164px;
-    right: 23%;
+@keyframes efecto {
+    0%{
+        transform: translateY(0);
+    }
+    34%{
+        transform: translateY(-10px);
+    }
+    64%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
-.contenidos h3{
-    margin-left: 700px;
-}
-.contenidos p{
-    margin-right: 76px;
-    margin-left: 702px;
+h3, h5{
+    color: #3D4351;
 }
 h3{
     font-size: 24px;
-    color: #3D4351;
+    margin-bottom: 20px;
 }
-.contenidos{
+h5{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+p{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28,54,83,.6);
+    padding-bottom: 20px;
+}
+.intro-dos p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.primero-icon img{
+    width: 64%;
+    font-weight: 700;
+}
+.primero-icon{
+    vertical-align: top;
+    padding: 6px 0 0;
+    margin-right: 20px;
+}
+.primero-content {
+    width: 70%;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.container{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.intro-dos{
+    background: #F3F4F8;
+    position: relative;
+}
+.intro-dos .device-img {
     position: absolute;
-    margin-top: -1075px;
+    bottom: -350px;
+    right: 61%;
 }
-.ipad{
+.devices, .features {
+    position: relative;
+}
+.intro-dos h3 {
+    margin: 0 0 20px;
+}
+
+.intro-dos .ipad-wrap {
     width: 706px;
     height: 1002px;
+    background: url(../img/ipad-device.png) center center no-repeat;
+    z-index: 1;
 }
-.iphone{
+.intro-dos .iphone-wrap {
     width: 304px;
     height: 620px;
+    background: url(../img/iphone6.png) center center no-repeat;
     position: absolute;
     left: 530px;
     bottom: 129px;
+    z-index: 2;
 }
-.image-icon{
-    margin-left: 615px;
-    margin-top: 56px;
+.intro-dos ul.conte-icon {
+    margin-top: 50px;
 }
-.image-icon p{
-    margin-left: 154px;
-    margin-right: 138px;
+.intro-dos ul.conte-icon li {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #E6E9EA;
 }
-.image-icon h5{
-    margin-left: 154px;
+.intro-dos ul.conte-icon li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.intro-dos .content {
+    display: inline-block;
+    width: 75%; 
 }
 .recycle{
-    position: absolute;
-    margin-top: 0;
-    margin-left: 88px;
-    width: 3%;
+    width: 35px;
+    margin-right: 20px;
+    vertical-align: top;
+    padding: 6px 0 0;
 }
 .user{
-    position: absolute;
-    margin-top: 0;
-    margin-left: 88px;
-    width: 3%;
+    width: 35px;
+    margin-right: 20px;
+    vertical-align: top;
+    padding: 6px 0 0;
 }
 .test{
-    position: absolute;
-    margin-top: 0;
-    margin-left: 88px;
-    width: 3%;
+    width: 35px;
+    margin-right: 20px;
+    vertical-align: top;
+    padding: 6px 0 0;
 }
 .intro-tres{
     background: #fff;
-    width: 100%;
-    margin-top: 1175px;
-    position: absolute;
-    margin-left: -41px;
 }
-
-.content{
-    margin-top: 140px;
-    margin-left: 20px;
+.features{
+    margin-top: -20px;
+    z-index: 3;
+    overflow: hidden;
 }
-.content p{
-    margin-right: 670px;
-    margin-top: 25px;
-}
-.content .boton{
-    position: absolute;
-    margin-top: 25px;
+.boton{
     font-size: 13px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 8px 40px;
     color: #FF5274;
-    border-radius: 100px;
-    border: 2px solid #FF5274; 
-    padding: -1px 39px 16px 39px;
 }
-.content .boton{
-    transition: .3s;
-  }
-.content .boton:hover{
+.boton:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
-  }
+}
+.features .boton {
+    margin-top: 20px;
+}
+ .features .macbook-wrap {
+    position: relative;
+    height: 540px;
+    left: 35%;
+    top: -600px;
+    background: url(../img/macbook-pro.png) center center no-repeat;
+}  
+.responsive-img{
+    display: none;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    section .row .col .intro-content {
+      width: 75%;
+    }  
+    .intro{
+      padding-top: 28%;
+    }
+    .devices{
+        display: none;
+    }
+    .features .macbook-wrap{
+        display: none;
+    }
+    .responsive-img{
+        display: block;
+        width: 85%;
+        margin: 15% auto 0;
+    }
+    img{
+        width: 100%;
+        margin-top: -83px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+    .col-m-offset-7 {
+        margin-left: 58%;
+    }
+    .col-m5 {
+        float: left;
+        width: 41%;
+    }
+  
+    
+}
+@media only screen and (min-width: 1200px){
+    .intro{
+        padding-top: 20%;
+      }
+    .container {
+        width: 1170px ;
+    }
+    
+}
+
+
+
+
+
+
+
 
