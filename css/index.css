@@ -151,7 +151,7 @@ p{
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
 }
-.intro-dos p {
+.segundo p {
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -177,29 +177,29 @@ p{
     margin-right: auto;
     margin-left: auto;
 }
-.intro-dos{
+.segundo{
     background: #F3F4F8;
     position: relative;
 }
-.intro-dos .device-img {
+.segundo .tablet-img {
     position: absolute;
     bottom: -350px;
     right: 61%;
 }
-.devices, .features {
+.tablet2, .features {
     position: relative;
 }
-.intro-dos h3 {
+.segundo h3 {
     margin: 0 0 20px;
 }
 
-.intro-dos .ipad-wrap {
+.segundo .ipad {
     width: 706px;
     height: 1002px;
     background: url(../img/ipad-device.png) center center no-repeat;
     z-index: 1;
 }
-.intro-dos .iphone-wrap {
+.segundo .iphone {
     width: 304px;
     height: 620px;
     background: url(../img/iphone6.png) center center no-repeat;
@@ -208,42 +208,42 @@ p{
     bottom: 129px;
     z-index: 2;
 }
-.intro-dos ul.conte-icon {
+.segundo ul.conte-icon {
     margin-top: 50px;
 }
-.intro-dos ul.conte-icon li {
+.segundo ul.conte-icon li {
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: solid 1px #E6E9EA;
 }
-.intro-dos ul.conte-icon li:last-child {
+.segundo ul.conte-icon li:last-child {
     padding-bottom: 0;
     border-bottom: none;
 }
 
-.intro-dos .content {
+.segundo .content {
     display: inline-block;
     width: 75%; 
 }
-.recycle{
+.reciclar{
     width: 35px;
     margin-right: 20px;
     vertical-align: top;
     padding: 6px 0 0;
 }
-.user{
+.usuario{
     width: 35px;
     margin-right: 20px;
     vertical-align: top;
     padding: 6px 0 0;
 }
-.test{
+.quimica{
     width: 35px;
     margin-right: 20px;
     vertical-align: top;
     padding: 6px 0 0;
 }
-.intro-tres{
+.tercero{
     background: #fff;
 }
 .features{
@@ -267,7 +267,7 @@ p{
 .features .boton {
     margin-top: 20px;
 }
- .features .macbook-wrap {
+ .features .macbook {
     position: relative;
     height: 540px;
     left: 35%;
@@ -287,10 +287,10 @@ p{
     }
 }
 @media only screen and (max-width: 991px) {
-    section .row .col .intro-content {
+    section .row .col .primero-content {
       width: 75%;
     }  
-    .intro{
+    .primero{
       padding-top: 28%;
     }
     .devices{
@@ -324,7 +324,7 @@ p{
     
 }
 @media only screen and (min-width: 1200px){
-    .intro{
+    .primero{
         padding-top: 20%;
       }
     .container {
