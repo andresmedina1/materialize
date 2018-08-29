@@ -183,25 +183,25 @@ p{
     background: #F3F4F8;
     position: relative;
 }
-.segundo .tablet-img {
+.segundo .device-img {
     position: absolute;
     bottom: -350px;
     right: 61%;
 }
-.tablet2, .features {
+.devices, .features {
     position: relative;
 }
 .segundo h3 {
     margin: 0 0 20px;
 }
 
-.segundo .ipad {
+.segundo .ipad-wrap {
     width: 706px;
     height: 1002px;
     background: url(../img/ipad-device.png) center center no-repeat;
     z-index: 1;
 }
-.segundo .iphone {
+.segundo .iphone-wrap {
     width: 304px;
     height: 620px;
     background: url(../img/iphone6.png) center center no-repeat;
@@ -227,19 +227,19 @@ p{
     display: inline-block;
     width: 75%; 
 }
-.reciclar{
+.recycle{
     width: 35px;
     margin-right: 20px;
     vertical-align: top;
     padding: 6px 0 0;
 }
-.usuario{
+.user{
     width: 35px;
     margin-right: 20px;
     vertical-align: top;
     padding: 6px 0 0;
 }
-.quimica{
+.test{
     width: 35px;
     margin-right: 20px;
     vertical-align: top;
@@ -252,9 +252,6 @@ p{
     margin-top: -20px;
     z-index: 3;
     overflow: hidden;
-}
-.features, .tercero{
-    height: 641px;
 }
 .boton{
     font-size: 13px;
@@ -272,7 +269,7 @@ p{
 .features .boton {
     margin-top: 20px;
 }
- .features .macbook {
+ .features .macbook-wrap {
     position: relative;
     height: 540px;
     left: 35%;
@@ -282,6 +279,7 @@ p{
 .responsive-img{
     display: none;
 }
+
 .cuarto{
     background: url(../img/polygonal-bg.jpg);
     padding-top: 17%;
@@ -338,17 +336,52 @@ p{
         transform: translateY(0);
     }
     34%{
-        transform: translateY(-10px);
+        transform: translateY(-7px);
     }
     64%{
-        transform: translateY(10px);
+        transform: translateY(7px);
     }
     100%{
         transform: translateY(0);
     }
 }
-
-*/
+.quinto{
+   background: #F3F4F8;
+   width: 100%;
+   margin-top: -100%;
+   padding-top: 45%;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -5%;
+}
+.quinto h2{
+    font-size: 27px;
+    margin-top: -48%;
+    margin-left: -2%;
+    color: #3D4351;
+}
+.quinto .leftcol{
+    width: 50%;
+    padding-right: 100px;
+    border-right: solid 1px #3D4351;
+}
+.quinto .rightcol{
+    width: 50%;
+    padding-left: 100px;
+}
+.quinto h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: #3D4351;
+}
+.quinto p{
+    font-size: 15px;
+    line-height: 29px;
+    color: #3D4351;
+    padding-bottom: 20px;
+}
 @media only screen and (min-width: 768px){
     .container {
         width: 750px;
@@ -372,12 +405,17 @@ p{
         width: 85%;
         margin: 15% auto 0;
     }
-    img{
+
+    .responsive-img, .img2{
         width: 100%;
-        margin-top: -83px;
+        margin-top: -20px;
     }
     .material-icons{
         left: 46%;
+    }
+    .diamond{
+        left: 34%;
+        margin-top: 15%;
     }
   
 }
