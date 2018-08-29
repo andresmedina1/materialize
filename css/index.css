@@ -111,6 +111,29 @@ section .row .col .primero-icon{
     background: #FF5274;
     color: white;
 } 
+.primero-icon img{
+    width: 64%;
+    font-weight: 700;
+}
+.primero-icon{
+    vertical-align: top;
+    padding: 6px 0 0;
+    margin-right: 20px;
+}
+.primero-content {
+    width: 70%;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0px;
+}
+.container{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .material-icons{
     color: #fff;
     font-size: 30px;
@@ -155,28 +178,7 @@ p{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.primero-icon img{
-    width: 64%;
-    font-weight: 700;
-}
-.primero-icon{
-    vertical-align: top;
-    padding: 6px 0 0;
-    margin-right: 20px;
-}
-.primero-content {
-    width: 70%;
-}
-.row{
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.container{
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 .segundo{
     background: #F3F4F8;
     position: relative;
@@ -251,6 +253,9 @@ p{
     z-index: 3;
     overflow: hidden;
 }
+.features, .tercero{
+    height: 641px;
+}
 .boton{
     font-size: 13px;
     display: inline-block;
@@ -277,10 +282,73 @@ p{
 .responsive-img{
     display: none;
 }
+.cuarto{
+    background: url(../img/polygonal-bg.jpg);
+    padding-top: 17%;
+    margin-top: 7%;
+    margin-bottom: 100%;
+    text-align: center;
+    width: 100%;
+}
+.cuarto h2{
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 40px;
+    margin-left: 1%;
+    margin-top: -19%;
+}
+.sketch{
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 40px;
+}
+.cuarto i{
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 300;
+    font-size: 25px;
+    color: #F69D52;
+    margin-top: 0px;
+    vertical-align: top;
+    margin-left: -8px;
+    font-style: normal;
+}
+.cuarto p{
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 1%;
+}
+.cuarto a{
+    font-size: 13px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 16px 40px;
+    color: #FF5274;
+}
+.cuarto a:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
+}
+.diamond{
+    position: absolute;
+    margin-top: 8%;
+    left: 600px;
+    animation: diamond 3s alternate infinite;
+}
+@keyframes diamond {
+    0%{
+        transform: translateY(0);
+    }
+    34%{
+        transform: translateY(-10px);
+    }
+    64%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 
-
-
-
+*/
 @media only screen and (min-width: 768px){
     .container {
         width: 750px;
@@ -291,7 +359,7 @@ p{
       width: 75%;
     }  
     .primero{
-      padding-top: 28%;
+      padding-top: 40%;
     }
     .devices{
         display: none;
@@ -308,6 +376,10 @@ p{
         width: 100%;
         margin-top: -83px;
     }
+    .material-icons{
+        left: 46%;
+    }
+  
 }
 @media only screen and (min-width: 992px){
     .container {
@@ -318,7 +390,7 @@ p{
     }
     .col-m5 {
         float: left;
-        width: 41%;
+        width: 40%;
     }
   
     
