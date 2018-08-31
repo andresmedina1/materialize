@@ -2,36 +2,49 @@
 body {
     font-family: 'Open Sans', sans-serif;  
 }
-nav{
-    box-shadow: 0 0 transparent;
+.nav{
     position: fixed;
+    height: auto;
+    background: transparent;
+    font-size: 13px;
+    transition: .5s;
+    box-shadow: 0px 0px transparent;
+    z-index: 999;
+    }
+.nav.is-down {
+        background: #232731;
+    }
+.nav.is-down>.container {
+        border: 0;
+        padding: 15px 0
+    }
+.nav .row{
+    margin: 0px;
 }
-nav .row{
-    margin: 0;
-}
-nav .container{
-    width: 90%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 28.5px 0;
-}
-nav .boton1{
+.nav>.container{
+     transition: .5s;
+        width: 90%;
+        border-bottom: solid 1px gray;
+        padding: 28.5px 0px;
+    }
+.nav .boton1{
     margin-right: 40px;
 }
-nav .boton1>li:nth-child(2)>a{
+.nav .boton1>li:nth-child(2)>a{
     background-color: transparent;
     box-shadow: 0 0 transparent;
     padding: 0 40px;
     border-radius: 100px;
     border: 1.5px white solid;
 }
-nav .boton1>li:nth-child(2)>a:hover{
+.nav .boton1>li:nth-child(2)>a:hover{
     border: solid 1px #FF5274;
 }
-nav ul li a, .boton1 {
+.nav ul li a, .boton1 {
     transition: .4s;
     font-size: 13px;
 }
-nav ul li a:hover, .boton1:hover {
+.nav ul li a:hover, .boton1:hover {
     color: #FF5274;
     background: transparent;
 }
@@ -249,10 +262,23 @@ p{
     background: #fff;
 }
 .features{
-    margin-top: -20px;
     z-index: 3;
     overflow: hidden;
 }
+.text{
+    padding: 8px 2px;
+    
+}
+.bot2{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28, 54, 83, .6);
+    padding-bottom: 20px;
+}
+.tercero .container .row{
+    padding: 120px 0;
+}
+
 .boton{
     font-size: 13px;
     display: inline-block;
@@ -270,47 +296,39 @@ p{
     margin-top: 20px;
 }
  .features .macbook-wrap {
-    position: relative;
-    height: 540px;
-    left: 35%;
-    top: -600px;
+    position: absolute;
+    width: 915px;
+    height: 530px;
+    left: 50%;
+    top: 115px;
     background: url(../img/macbook-pro.png) center center no-repeat;
 }  
 .responsive-img{
     display: none;
 }
-
 .cuarto{
-    background: url(../img/polygonal-bg.jpg);
-    padding-top: 17%;
-    margin-top: 7%;
-    margin-bottom: 100%;
-    text-align: center;
-    width: 100%;
+    margin-top: 120px;
+    background: url(../img/polygonal-bg.jpg) center center no-repeat #333844;
+    padding-bottom: 10px;
+    position: relative;
 }
 .cuarto h2{
-    color: rgba(255, 255, 255, 0.88);
-    font-size: 40px;
-    margin-left: 1%;
-    margin-top: -19%;
-}
-.sketch{
-    color: rgba(255, 255, 255, 0.88);
-    font-size: 40px;
+    color: #fff;
+    margin: 0 0 20px;
+    text-align: center;
 }
 .cuarto i{
-    font-family: 'Open Sans', sans-serif;  
+    font-family: Nunito,sans-serif;
     font-weight: 300;
     font-size: 25px;
     color: #F69D52;
-    margin-top: 0px;
     vertical-align: top;
     margin-left: -8px;
     font-style: normal;
 }
 .cuarto p{
-    color: rgba(255, 255, 255, 0.7);
-    margin-left: 1%;
+    color: #ACB1B4;
+    text-align: center;
 }
 .cuarto a{
     font-size: 13px;
@@ -319,6 +337,7 @@ p{
     border-radius: 40px;
     padding: 16px 40px;
     color: #FF5274;
+    margin-left: 42%;
 }
 .cuarto a:hover{
     border: 2px solid #FF5274; 
@@ -326,9 +345,12 @@ p{
     color: white;
 }
 .diamond{
+    width: 230px;
+    height: 230px;
     position: absolute;
-    margin-top: 8%;
-    left: 600px;
+    bottom: -128px;
+    top: 82%;
+    left: 42%;
     animation: diamond 3s alternate infinite;
 }
 @keyframes diamond {
@@ -336,51 +358,87 @@ p{
         transform: translateY(0);
     }
     34%{
-        transform: translateY(-7px);
+        transform: translateY(-10px);
     }
     64%{
-        transform: translateY(7px);
+        transform: translateY(10px);
     }
     100%{
         transform: translateY(0);
     }
 }
 .quinto{
-   background: #F3F4F8;
-   width: 100%;
-   margin-top: -100%;
-   padding-top: 45%;
-}
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-top: -5%;
+    background: #F3F4F8;
+    width: 100%;
 }
 .quinto h2{
-    font-size: 27px;
-    margin-top: -48%;
-    margin-left: -2%;
-    color: #3D4351;
+    font-size: 24px;
+    line-height: 7;
 }
-.quinto .leftcol{
-    width: 50%;
+.quinto .left-aling{
     padding-right: 100px;
-    border-right: solid 1px #3D4351;
+    border-right: solid 1px rgba(61, 67, 81, 0.69);
 }
-.quinto .rightcol{
-    width: 50%;
+.quinto .right-aling{
     padding-left: 100px;
 }
 .quinto h5{
     font-size: 15px;
-    font-weight: 500;
-    color: #3D4351;
 }
 .quinto p{
     font-size: 15px;
-    line-height: 29px;
-    color: #3D4351;
-    padding-bottom: 20px;
+    line-height: 2;
+    color: rgb(178, 182, 190);
+}
+.sexto{
+    background-color: #F3F4F8;
+    text-align: center;
+}
+.sexto .row{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.left-aling, .center-aling, .right-aling{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.left-aling img, .center-aling img, .right-aling img{
+    width: 100%;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.left-aling img:hover, .center-aling img:hover, .right-aling img:hover{
+    transform: scale(1.2);
+}
+.titulos{
+    font-size: 12px;
+    text-align: center;
+}
+.link{
+    color: #FF5274;
+}
+.sexto p{
+    text-align: center;
+}
+.parrafo{
+    color: rgba(35, 39, 49, 0.73);
+}
+.sexto .boton{
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 8px 40px;
+    color: #FF5274;
+}
+.sexto .boton:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
 }
 @media only screen and (min-width: 768px){
     .container {
@@ -414,10 +472,9 @@ p{
         left: 46%;
     }
     .diamond{
-        left: 34%;
-        margin-top: 15%;
+        left: 42%;
+        margin-top: 1%;
     }
-  
 }
 @media only screen and (min-width: 992px){
     .container {
@@ -429,9 +486,7 @@ p{
     .col-m5 {
         float: left;
         width: 40%;
-    }
-  
-    
+    }    
 }
 @media only screen and (min-width: 1200px){
     .primero{

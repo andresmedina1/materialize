@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-    });
-    $(document).ready(function(){
-    $('.sidenav').sidenav();
-    });
+const navBar = document.querySelector('nav')
+window.addEventListener('scroll', () =>{
+    if(window.scrollY>0) navBar.classList.add('is-down')
+    else navBar.classList.remove('is-down')
+})
