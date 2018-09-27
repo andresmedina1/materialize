@@ -630,6 +630,7 @@ p{
 /**************************PIE DE PAGINA*******************************************************/
 footer{
     background-color: #3D4351;
+    margin-bottom: 0px;
 }
 footer .row {
     margin-right: -15px;
@@ -640,7 +641,7 @@ footer .footer-links {
 }
 footer .footer-group {
     border-top: solid 1px #4E566C;
-    padding-top: 25px;
+    padding-top: 32px;
     margin-bottom: 45px;
     display: inline-block;
 }
@@ -651,7 +652,9 @@ footer .footer-group li {
 footer .footer-group li a {
     font-size: 13px;
     color: white;
-    transition: 1s;
+    transition: 0s;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
 }
 footer .footer-group li a:hover{
    color:  #FF5274;
@@ -683,7 +686,7 @@ footer .social-share p {
     color: #fff;
     padding-bottom: 10px;
 }
-footer .social-share a .twitter-share{
+.twitter-share{
     background-color: #1AB4EF;
     margin-right: 20px;
     height: 60px;
@@ -692,8 +695,12 @@ footer .social-share a .twitter-share{
     font-size: 22px;
     text-align: center;
     display: inline-block;
-} 
-footer .social-share a .facebook-share{
+    transition: 0s;
+}
+.twitter-share:hover{
+    background-color: rgba(26, 182, 239, 0.7);
+}
+.facebook-share{
     background-color: #3B5898;
     margin-right: 20px;
     height: 60px;
@@ -702,7 +709,15 @@ footer .social-share a .facebook-share{
     font-size: 22px;
     text-align: center;
     display: inline-block;
+    transition: 0s;
 } 
+.facebook-share:hover{
+    background-color: rgba(59, 88, 152, 0.71);
+}
+footer .social-share a img{
+    width: 35%;
+    margin-top: 20px;
+}
 @keyframes latidos {
     from { transform: none; }
     50% { transform: scale(1.4); }
